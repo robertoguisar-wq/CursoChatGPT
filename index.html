@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>México 2026 | Edición Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <img src="Logo.png" class="logo" alt="Logo">
+            <nav>
+                <a href="#historia">Historia</a>
+                <a href="#jugadores">Jugadores</a>
+                <a href="#resultados">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="swiper mySwiper hero">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="carrusel1.jpg"></div>
+                <div class="swiper-slide"><img src="carrusel2.jpg"></div>
+                <div class="swiper-slide"><img src="carrusel3.jpg"></div>
+                <div class="swiper-slide"><img src="carrusel4.jpg"></div>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <div class="video-box">
+                <h2 class="section-title">En el Terreno</h2>
+                <video controls><source src="video.mp4" type="video/mp4"></video>
+            </div>
+            
+            <div id="jugadores" class="players-box">
+                <h2 class="section-title">El Equipo</h2>
+                <div class="players-list">
+                    <div class="card"><img src="jugador1.jpg"><span>Memo Ochoa</span></div>
+                    <div class="card"><img src="jugador2.jpg"><span>Edson Alvarez</span></div>
+                    <div class="card"><img src="jugador3.jpg"><span>Johan Vazquez</span></div>
+                    <div class="card"><img src="jugador4.jpg"><span>Santiago Gimenez</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>new Swiper('.mySwiper', {autoplay: {delay: 3000}, effect: 'fade'});</script>
+</body>
+</html>
